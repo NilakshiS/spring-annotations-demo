@@ -23,4 +23,9 @@ public class ConfigurationClass {
     public BeanLifecycleDemoBean beanLifecycle(){
         return new BeanLifecycleDemoBean();
     }
+
+    @Bean
+    public BeanPostProcessorDemo beanPostProcessorDemo(){
+        return new BeanPostProcessorDemo();
+    }
 }
