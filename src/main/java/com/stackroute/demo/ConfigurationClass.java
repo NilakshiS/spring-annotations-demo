@@ -18,4 +18,9 @@ public class ConfigurationClass {
         Movie movie1 = new Movie();
         return movie1;
     }
+
+    @Bean
+    public BeanLifecycleDemoBean beanLifecycle(){
+        return new BeanLifecycleDemoBean();
+    }
 }
