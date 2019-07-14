@@ -9,7 +9,7 @@ public class Main
     public static void main(String[] args) {
 
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ConfigurationClass.class);
-        Movie movie = context.getBean("movie",Movie.class);
+        Movie movie = context.getBean(Movie.class);
         System.out.println(movie.getActor().getName());
         System.out.println(movie.getActor().getAge());
         System.out.println(movie.getActor().getGender());

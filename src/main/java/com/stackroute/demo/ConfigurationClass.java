@@ -1,9 +1,11 @@
 package com.stackroute.demo;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
+
 public class ConfigurationClass {
     @Bean
     public Actor actor(){
