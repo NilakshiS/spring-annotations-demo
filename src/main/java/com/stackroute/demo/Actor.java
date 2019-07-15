@@ -7,18 +7,22 @@ public class Actor {
     String name;
     String gender;
     int age;
+
     Actor(){}
 
+    @Value("cde")
     public void setName(String name) {
         this.name = name;
         //System.out.println("setName called");
     }
 
+    @Value("female")
     public void setGender(String gender) {
         this.gender = gender;
         //System.out.println("setGender called");
     }
 
+    @Value("23")
     public void setAge(int age) {
         this.age = age;
         //System.out.println("setAge called");

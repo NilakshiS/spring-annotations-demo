@@ -7,13 +7,13 @@ import org.springframework.context.annotation.Configuration;
 public class ConfigurationClass {
     @Bean
     public Actor actor(){
-        Actor actor1 = new Actor("cde","female",23);
+        Actor actor1 = new Actor();
         return actor1;
     }
 
     @Bean
     public Movie movie(){
-        Movie movie1 = new Movie(actor());
-        return movie1;
+        //Movie movie1 = new Movie();
+        return new Movie();
     }
 }
