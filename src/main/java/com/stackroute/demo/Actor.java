@@ -1,16 +1,16 @@
 package com.stackroute.demo;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 
 public class Actor {
-    String name;
-    String gender;
-    int age;
+    private String name;
+    private String gender;
+    private int age;
 
-    @Autowired
+    //default constructor
     Actor(){}
 
+    //setter with default values for new beans
     @Value("cde")
     public void setName(String name) {
         this.name = name;
@@ -26,6 +26,7 @@ public class Actor {
         this.age = age;
     }
 
+    //getters
     public String getName() {
         return name;
     }
@@ -38,12 +39,14 @@ public class Actor {
         return age;
     }
 
+    //parameterised constructor
     public Actor(String name, String gender, int age) {
         this.name = name;
         this.gender = gender;
         this.age = age;
     }
 
+    //toString method
     @Override
     public String toString() {
         return "Actor{" +
