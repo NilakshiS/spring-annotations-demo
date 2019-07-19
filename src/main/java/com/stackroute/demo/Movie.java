@@ -3,15 +3,18 @@ package com.stackroute.demo;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class Movie{
-    Actor actor;
+    private Actor actor;
 
+    //parameterised constructor
     public Movie(Actor actor){this.actor = actor;}
 
+    //setter
     public void setActor(Actor actor) {
         this.actor = actor;
         System.out.println("setActor called");
     }
 
+    //getter
     public Actor getActor() {
         return actor;
     }
