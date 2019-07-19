@@ -5,15 +5,16 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class ConfigurationClass {
+
+    //Actor bean
     @Bean
     public Actor actor(){
-        Actor actor1 = new Actor();
-        return actor1;
+        return new Actor();
     }
 
+    //Movie bean
     @Bean
     public Movie movie(){
-        //Movie movie1 = new Movie();
         return new Movie();
     }
 }
